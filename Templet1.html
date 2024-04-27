@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./Templet1.css">
+<style>
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+/*admin-details*/
+.admin{
+    width: 18%;
+    height: 120vh;
+    background-color: rgb(77, 121, 121);
+    box-shadow: 0 20px 35px rgba(0, 0, 27, 0.1);
+}
+.admin .admin-img{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    background-color: darkcyan;
+    padding-left: 10px;
+    
+}
+.admin .admin-img .imgs{
+    height: 48px;
+    width: 48px;
+    margin: 2% 1%;
+}
+.admin .admin-img .imgs img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.admin .admin-img .intro{
+    margin-left: 9px;
+    margin-top: 5px;
+}
+.admin .menu{
+    height:77%;
+    width: 100%;
+}
+.menu h4{
+    font-size: 25px;
+    margin:3% 5%;
+    
+}
+.admin .menu li{
+    list-style: none;
+    padding: 14px; 
+}
+.admin .menu a{
+    color: whitesmoke;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: none;
+    font-size: 18px;
+   margin-left: 36px;
+}
+.admin .menu li i{
+    margin-right: 5px;
+}
+
+/*Dashboard-info*/
+.details{
+    height: 120vh;
+    width: 83%;   
+}
+.details .header{
+    height: 7vh;
+    width: 100%;
+    background-color: rgb(89, 109, 89);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.details .header  ul{
+    display: flex;
+
+}
+.details .header  li{
+    display: flex;
+    margin-left: 20px;
+    list-style: none;
+}
+.header .div1{
+    height: 6vh;
+    width: 20%;
+}
+.header .div1 i{
+    margin-top: 12px;
+   
+}
+.header .div1  img{
+    height: 6vh;
+    width: 35px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 10px;
+   
+}
+.header .div2{
+    height: 6vh;
+    width: 40%;
+    /*margin-top: 20px;*/
+    margin-left: 6%;
+    padding-left: 38%;
+    padding-top: 15px;
+}
+.header .div3{
+    height: 7vh;
+    width: 20%;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+.header .div3 h2{
+    padding-bottom: 27px;
+    color: whitesmoke;
+}
+.details .info{
+    height: 8vh;
+    width: 100%;
+    background-color: rgb(204, 75, 28);
+}
+.details .block{
+    width: 100%;
+    height: 105vh;
+    background-color: rgb(255, 251, 245);
+    margin: 3px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3px;
+    
+}
+.details .block .card1{
+    height: 23vh;
+    width: 100%;
+    /*border: 2px solid black;*/
+    margin: 15px 5px 5px 15px;
+    padding: 10px 8px;
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+
+}
+.details .block .card1 .box{
+    height: 20vh;
+    width: 23%;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+   
+}
+.box .icon{
+    align-items: center;
+    padding-top: 30px;
+    padding-left: 100px;
+}
+.box .information{
+    margin: 5px 70px;
+}
+.box .information h2{
+    padding-left: 22px;
+}
+.box .information p{
+    padding-left: 15px;
+}
+.details .block .card2{
+    height: 23vh;
+    width: 100%;
+   /*  border: 2px solid black; */
+    margin: 15px 5px 5px 15px;
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    padding: 10px 8px;
+
+}
+.details .block .card2 .box{
+    height: 20vh;
+    width: 23%;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.card2 .box .card2-box2-icon {
+    height: 10vh;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background: rgb(84, 84, 155);
+    
+}
+.card2 .box .card2-box2-info{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+}
+.card2 .box .card2-box2-info .info1{
+    height: 100%;
+    width: 50%;
+    padding-top: 8px;
+    padding-left: 40px;
+}
+.card2 .box .card2-box2-info .info2{
+    height: 100%;
+    width: 50%;
+    padding-top: 8px;
+    padding-left: 35px;
+}
+.details .block .card3{
+    height: 49vh;
+    width: 100%;
+    background: #fff;
+    margin: 15px 5px 5px 15px;
+
+}
+.card3 .chart-img{
+    height: 41vh;
+    width: 100%;
+    background-color: rgb(248, 232, 213);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.card3 .chart-img .img1{
+    height: 100%;
+    width: 50%;
+    margin-left: 10px;
+}
+.card3 .chart-img .img1 img{
+    height: 100%;
+    width: 100%;
+}
+.card3 .chart-img .img2{
+    height: 100%;
+    width: 50%;
+    margin-left: 10px;
+}
+.card3 .chart-img .img2 img{
+    height: 100%;
+    width: 100%;
+}
+
+
+</style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="admin">
+            <div class="admin-img">
+                <div class="imgs">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZMJY_gsOi30gSOTRUdsD_N-LvgRh_bRShk1ZGucv3wQ&s">
+                </div>
+                <div class="intro">
+                    <h2 style="padding-left: 5px;">Vandna</h2>
+                    <p style="padding-left: 6px;"> Full Stack Developer</p>
+                </div>
+            </div>
+            
+            <div class="menu">
+                <h4>General</h4><hr>
+                <ul>
+                    <li><a href=""><i class="fa-solid fa-gauge-high" ></i>Dashboard</a></li>
+                    <li><a href=""><i class="fa-solid fa-clock"></i>Widgets</a></li>
+                    <li><a href=""><i class="fa-brands fa-elementor"></i>Element</a></li>
+                    <li><a href=""><i class="fa-solid fa-table"></i>Tables</a></li>
+                    <li><a href=""><i class="fa-brands fa-app-store-ios"></i>Apps</a></li>
+                    <li><a href=""><i class="fa-solid fa-table-list"></i>Pricing Tables</a></li>
+                    <li><a href=""><i class="fa-solid fa-square-phone"></i>Contact</a></li>
+                    <li><a href=""><i class="fa-regular fa-file-lines"></i>Additional Pages</a></li>
+                    <li><a href=""><i class="fa-solid fa-location-dot"></i>Map</a></li>
+                    <li><a href=""><i class="fa-solid fa-chart-line"></i>Chart</a></li>
+                    <li><a href=""><i class="fa-solid fa-gear"></i>Setting</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="details">
+            <div class="header">
+                <div class="div1">
+                <ul>
+                    <li><i class="fa-solid fa-bars fa-2xl" style="color: #fff;"></i></li>
+                    <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZMJY_gsOi30gSOTRUdsD_N-LvgRh_bRShk1ZGucv3wQ&s"></li>
+                
+                </ul>
+              </div>
+              <div class="div2"><ul>
+                <li><i class="fa-solid fa-bell fa-xl" style="color: #fff;"></i></li>
+                <li><i class="fa-regular fa-circle-question fa-lg " style="color: #fff;"></i></li>
+                <li><i class="fa-solid fa-square-envelope fa-xl " style="color: #fff;"></i></li>
+            </ul></div>
+              <div class="div3">
+                <ul>
+                    <li><h2>Vandna Pal</h2></li>
+                </ul>
+              </div>
+        
+            </div>
+            <div class="info">
+                <h1 style="padding: 3px;">DASHBOARD</h1>
+            </div>
+            <div class="block">
+                <div class="card1">
+                <div class="box">
+                    <div class="icon">
+                        <i class="fas fa-user fa-2xl" style="color: orange;"></i>
+                    </div>
+                    <div class="information">
+                        <h2>2500</h2>
+                        <p style="padding-left: 19px;">Welcome</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <i class="fas fa-clock fa-2xl" style="color: teal; "></i>
+                    </div>
+                    <div class="information">
+                        <h2>123.50</h2>
+                        <p>Average Time</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <i class="fas fa-cloud fa-2xl" style="color: slateblue;"></i>
+                    </div>
+                    <div class="information">
+                        <h2>1805</h2>
+                        <p style="padding-left: 19px;">Collection</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"> 
+                        <i class="fas fa-comment fa-2xl" style="color: red;"></i>
+                    </div>
+                    <div class="information">
+                        <h2 style="padding-left: 35px;">54</h2>
+                        <p style="padding-left: 20px;">Comments</p>
+                    </div>
+                </div>
+                </div>
+                <div class="card2">
+                <div class="box">
+                    <div class="card2-box2-icon">
+                        <div class="icon">
+                            <i class="fa-brands fa-facebook fa-2xl" style="color:#fff;"></i>
+                        </div>
+                    </div>
+                    <div class="card2-box2-info">
+                        <div class="info1">
+                            <h3>35k</h3>
+                            <p>Friends</p>
+                        </div>
+                        <div class="info2">
+                            <h3>128</h3>
+                            <p>Feeds</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="card2-box2-icon" style="background: rgb(145, 90, 197);">
+                        <div class="icon">
+                            <i class="fa-brands fa-twitter fa-2xl" style="color: #fff;"></i>
+                        </div>
+                    </div>
+                    <div class="card2-box2-info">
+                        <div class="info1">
+                            <h3>589k</h3>
+                            <p>Followers</p>
+                        </div>
+                        <div class="info2">
+                            <h3>978</h3>
+                            <p>Tweets</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="card2-box2-icon" style="background: rgb(2, 2, 129);">
+                        <div class="icon">
+                            <i class="fa-brands fa-linkedin fa-2xl" style="color: #fff;"></i>
+                        </div>
+                    </div>
+                    <div class="card2-box2-info">
+                        <div class="info1">
+                            <h3>590+</h3>
+                            <p>Contacts</p>
+                        </div>
+                        <div class="info2">
+                            <h3>378</h3>
+                            <p>Feeds</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="card2-box2-icon" style="background: rgb(248, 65, 65);">
+                        <div class="icon">
+                            <i class="fa-brands fa-google fa-2xl" style="color:#fff;"></i>
+                        </div>
+                    </div><!--ctrl+/=short key for comment-->
+                    <div class="card2-box2-info">
+                        <div class="info1">
+                            <h3>450</h3>
+                            <p>Followers</p>
+                        </div>
+                        <div class="info2">
+                            <h3>57</h3>
+                            <p>Circle</p>
+                        </div>
+                    </div>
+                </div>
+               </div>
+               <div class="card3">
+                <h1 style="margin-bottom: 15px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Chart information</h1>
+                <div class="chart-img">
+                    <div class="img1">
+                     <img src="https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3A347ece48-0f69-11e9-a3aa-118c761d2745?source=ig" alt="">
+                    </div>
+                    <div class="img2">
+                        <img src="https://cdn1.vectorstock.com/i/1000x1000/37/50/chart-vector-113750.jpg" alt="">
+                    </div>
+                </div>
+               </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
